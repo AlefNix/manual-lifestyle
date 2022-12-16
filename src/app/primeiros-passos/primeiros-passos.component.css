@@ -49,6 +49,11 @@ li img {
 .textos {
   padding: 15px;
 }
+@media(max-width:420px){
+  .lista-primeiros-passos{
+    padding:5px 15px;
+  }
+}
 @media(max-width:320px){
   .img-cadastro {
     width: 290px;
