@@ -12,6 +12,7 @@ import { EnviarFichaComponent } from './enviar-ficha/enviar-ficha.component';
 
 import { RouterModule } from '@angular/router';
 import { InicioComponent } from './inicio/inicio.component';
+import { PrimeirosPassosComponent } from './primeiros-passos/primeiros-passos.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { InicioComponent } from './inicio/inicio.component';
     AdicionarMidiaNoExercicioComponent,
     EnviarFichaComponent,
     InicioComponent,
+    PrimeirosPassosComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,7 @@ import { InicioComponent } from './inicio/inicio.component';
       {path: 'criar-ficha', component: CriarFichaComponent},
       {path: 'adicionar-midia', component: AdicionarMidiaNoExercicioComponent},
       {path: 'adicionar-exercicio', component: AdicionarExercicioComponent},
+      {path: 'primeiros-passos', component: PrimeirosPassosComponent},
       {path: 'inicio', component: InicioComponent},
       {path: '', redirectTo: '/inicio', pathMatch: 'full'},
       {path: '**', component: InicioComponent}

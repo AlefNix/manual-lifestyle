@@ -2,12 +2,13 @@
 <div class="container">
   <mat-toolbar class="nav-bar">
     <button mat-icon-button (click)="snav.toggle()" class="example-icon"><mat-icon class="icone" fontIcon="menu">menu</mat-icon></button>
-    <a class="nome" routerLink="/inicio" (click)="snav.close()">Manual LifeStyle</a>
+    <a class="nome" routerLink="/inicio" (click)="snav.close()">Manual para o personal</a>
   </mat-toolbar>
 
   <mat-sidenav-container class="sidenav-container">
-    <mat-sidenav #snav mode="over" fixedTopGap="56">
+    <mat-sidenav #snav mode="over">
       <mat-nav-list class="lista">
+        <a  routerLink="/primeiros-passos" mat-list-item class="button" routerLinkActive="active-button" ariaCurrentWhenActive="page" (click)="snav.toggle()">Primeiros passos</a>
         <a  routerLink="/criar-ficha" mat-list-item class="button" routerLinkActive="active-button" ariaCurrentWhenActive="page" (click)="snav.toggle()">Como criar uma ficha</a>
         <a  routerLink="/enviar-ficha" mat-list-item class="button" routerLinkActive="active-button" ariaCurrentWhenActive="page" (click)="snav.toggle()">Como enviar a ficha</a>
         <a  routerLink="/adicionar-exercicio" mat-list-item class="button" routerLinkActive="active-button" ariaCurrentWhenActive="page" (click)="snav.toggle()">Como adicionar exercício</a>
