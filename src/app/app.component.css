@@ -1,8 +1,9 @@
-*{
+* {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
+
 .nav-bar {
   position: fixed;
   top: 0;
@@ -10,14 +11,17 @@
   background-color: black;
   z-index: 10;
 }
+
 .icone {
   color: #fff
 }
+
 .nome {
   text-decoration: none;
   font-size: 25px;
   color: #fff;
 }
+
 .lista {
   margin-top: 64px;
   padding: 10px;
@@ -38,20 +42,135 @@
   outline: 0;
   text-align: center;
 }
-.button::before  {
+
+.button::before {
   background: #ffffff linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
 }
+
 .active-button {
   background: linear-gradient(to bottom, #dfff11 5%, #f6ff00 100%);
 }
+
+.conteudo-principal {
+  background:
+      linear-gradient(61deg,
+      rgba(255, 255, 255, 0.18) 6%,
+      rgba(211,211,211,0.45) 15%,
+      rgba(255, 255, 255, 0.2) 15%,
+      rgba(255, 255, 255, 0.2) 35%,
+      rgba(255,255,255,0) 35%,
+      rgba(255,255,255,0) 50%,
+      rgba(255,255,255,0) 65%,
+      rgba(255, 255, 255, 0.2) 65%,
+      rgba(255, 255, 255, 0.2) 85%,
+      rgba(211,211,211,0.45) 85%,
+      rgba(255, 255, 255, 0.18) 94%
+      ),
+      linear-gradient(111deg,
+      rgba(255, 255, 255, 0.18) 6%,
+      rgba(211,211,211,0.45) 15%,
+      rgba(255, 255, 255, 0.2) 15%,
+      rgba(255, 255, 255, 0.2) 35%,
+      rgba(255,255,255,0) 35%,
+      rgba(255,255,255,0) 50%,
+      rgba(255,255,255,0) 65%,
+      rgba(255, 255, 255, 0.2) 65%,
+      rgba(255, 255, 255, 0.2) 85%,
+      rgba(211,211,211,0.45) 85%,
+      rgba(255, 255, 255, 0.18) 94%
+      ),
+      linear-gradient(21deg,
+      rgba(255, 255, 255, 0.18) 6%,
+      rgba(211,211,211,0.45) 15%,
+      rgba(255, 255, 255, 0.2) 15%,
+      rgba(255, 255, 255, 0.2) 35%,
+      rgba(255,255,255,0) 35%,
+      rgba(255,255,255,0) 50%,
+      rgba(255,255,255,0) 65%,
+      rgba(255, 255, 255, 0.2) 65%,
+      rgba(255, 255, 255, 0.2) 85%,
+      rgba(211,211,211,0.45) 85%,
+      rgba(255, 255, 255, 0.18) 94%
+      ),
+      linear-gradient(145deg,
+      rgba(151,170,0,1) 0%,
+      rgba(227,255,0,1) 6%,
+      rgba(227,255,0,1) 6%,
+      rgba(232,255,45,1) 11%,
+      rgba(232,255,45,1) 11%,
+      rgba(239,255,110,1) 17%,
+      rgba(239,255,110,1) 17%,
+      rgba(242,255,134,1) 22%,
+      rgba(255, 255, 255, 0) 22%,
+      rgba(255, 255, 255, 0) 78%,
+      rgba(242,255,134,1) 78%,
+      rgba(239,255,110,1) 83%,
+      rgba(239,255,110,1) 83%,
+      rgba(232,255,45,1) 89%,
+      rgba(232,255,45,1) 89%,
+      rgba(227,255,0,1) 94%,
+      rgba(227,255,0,1) 94%,
+      rgba(151,170,0,1) 100%
+      );
+
+}
+
 .icone-whatsapp {
-  position:fixed;
+  position: fixed;
   right: 10px;
   bottom: 20px;
   z-index: 10;
   width: 50px;
   height: 50px;
 }
-@media(max-width:320px){
 
+@media(max-width:420px) {
+  .nav-bar {
+    padding: 0 5px;
+  }
+
+  .nome {
+    font-size: 20px;
+  }
 }
+/*
+model gradient = linear-gradient(216deg,
+      rgba(77, 77, 77, 0.05) 0%,
+      rgba(77, 77, 77, 0.05) 25%,
+      rgba(42, 42, 42, 0.05) 25%,
+      rgba(42, 42, 42, 0.05) 38%,
+      rgba(223, 223, 223, 0.05) 38%,
+      rgba(223, 223, 223, 0.05) 75%,
+      rgba(36, 36, 36, 0.05) 75%,
+      rgba(36, 36, 36, 0.05) 100%),
+    linear-gradient(44deg,
+      rgba(128, 128, 128, 0.05) 0%,
+      rgba(128, 128, 128, 0.05) 34%,
+      rgba(212, 212, 212, 0.05) 34%,
+      rgba(212, 212, 212, 0.05) 57%,
+      rgba(25, 25, 25, 0.05) 57%,
+      rgba(25, 25, 25, 0.05) 89%,
+      rgba(135, 135, 135, 0.05) 89%,
+      rgba(135, 135, 135, 0.05) 100%),
+    linear-gradient(241deg,
+      rgba(55, 55, 55, 0.05) 0%,
+      rgba(55, 55, 55, 0.05) 14%,
+      rgba(209, 209, 209, 0.05) 14%,
+      rgba(209, 209, 209, 0.05) 60%,
+      rgba(245, 245, 245, 0.05) 60%,
+      rgba(245, 245, 245, 0.05) 69%,
+      rgba(164, 164, 164, 0.05) 69%,
+      rgba(164, 164, 164, 0.05) 100%),
+    linear-gradient(249deg,
+      rgba(248, 248, 248, 0.05) 0%,
+      rgba(248, 248, 248, 0.05) 32%,
+      rgba(148, 148, 148, 0.05) 32%,
+      rgba(148, 148, 148, 0.05) 35%,
+      rgba(202, 202, 202, 0.05) 35%,
+      rgba(202, 202, 202, 0.05) 51%,
+      rgba(181, 181, 181, 0.05) 51%,
+      rgba(181, 181, 181, 0.05) 100%),
+    linear-gradient(92deg,
+      rgb(255, 228, 225),
+      rgb(255, 228, 225))
+      */
