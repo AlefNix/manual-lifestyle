@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '../material.module';
 import { CriarFichaComponent } from './criar-ficha/criar-ficha.component';
 import { AdicionarExercicioComponent } from './adicionar-exercicio/adicionar-exercicio.component';
-import { AdicionarMidiaNoExercicioComponent } from './adicionar-midia-no-exercicio/adicionar-midia-no-exercicio.component';
 import { EnviarFichaComponent } from './enviar-ficha/enviar-ficha.component';
 
 import { RouterModule } from '@angular/router';
@@ -19,7 +18,6 @@ import { PrimeirosPassosComponent } from './primeiros-passos/primeiros-passos.co
     AppComponent,
     CriarFichaComponent,
     AdicionarExercicioComponent,
-    AdicionarMidiaNoExercicioComponent,
     EnviarFichaComponent,
     InicioComponent,
     PrimeirosPassosComponent,
@@ -32,7 +30,6 @@ import { PrimeirosPassosComponent } from './primeiros-passos/primeiros-passos.co
     RouterModule.forRoot([
       {path: 'enviar-ficha', component: EnviarFichaComponent},
       {path: 'criar-ficha', component: CriarFichaComponent},
-      {path: 'adicionar-midia', component: AdicionarMidiaNoExercicioComponent},
       {path: 'adicionar-exercicio', component: AdicionarExercicioComponent},
       {path: 'primeiros-passos', component: PrimeirosPassosComponent},
       {path: 'inicio', component: InicioComponent},
